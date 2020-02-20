@@ -8,6 +8,7 @@
     android:background="@drawable/splash">
 
     //just a comment to test!
+    //test again
 
     <ImageView
         android:id="@+id/splashLogoWithNameImageView"
