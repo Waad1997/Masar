@@ -7,6 +7,8 @@
     tools:context=".Splash"
     android:background="@drawable/splash">
 
+    //just a comment to test!
+
     <ImageView
         android:id="@+id/splashLogoWithNameImageView"
         android:layout_width="255dp"
