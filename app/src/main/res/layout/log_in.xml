@@ -26,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="#00FAF7F7"
-            app:srcCompat="@drawable/rightTail" />
+            app:srcCompat="@drawable/righttail" />
 
         <TextView
             android:id="@+id/logInWelcomeBackTextView"
@@ -53,8 +53,8 @@
             android:layout_height="56dp"
             android:layout_marginBottom="25dp"
             android:background="@drawable/rounded_button"
-            android:drawableStart="@drawable/personIcon"
-            android:drawableLeft="@drawable/personIcon"
+            android:drawableStart="@drawable/personicon"
+            android:drawableLeft="@drawable/personicon"
             android:paddingLeft="30dp"
             android:drawablePadding="-30dp"
             android:ems="10"
@@ -71,8 +71,8 @@
             android:layout_height="56dp"
             android:layout_marginBottom="136dp"
             android:background="@drawable/rounded_button"
-            android:drawableStart="@drawable/openLockIcon"
-            android:drawableLeft="@drawable/openLockIcon"
+            android:drawableStart="@drawable/openlockicon"
+            android:drawableLeft="@drawable/openlockicon"
             android:paddingLeft="30dp"
             android:drawablePadding="-30dp"
             android:ems="10"

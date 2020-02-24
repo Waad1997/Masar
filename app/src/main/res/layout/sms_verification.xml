@@ -29,7 +29,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:rippleColor="#00FAF7F7"
-                app:srcCompat="@drawable/rightTail" />
+                app:srcCompat="@drawable/righttail" />
 
             <TextView
                 android:id="@+id/smsVerLetsGetStartedTextView"
@@ -66,8 +66,8 @@
                 android:layout_height="56dp"
                 android:layout_marginBottom="340dp"
                 android:background="@drawable/rounded_button"
-                android:drawableStart="@drawable/phoneIcon"
-                android:drawableLeft="@drawable/phoneIcon"
+                android:drawableStart="@drawable/phoneicon"
+                android:drawableLeft="@drawable/phoneicon"
                 android:paddingLeft="30dp"
                 android:drawablePadding="-30dp"
                 android:ems="10"
