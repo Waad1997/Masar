@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "338687978964",
-    "firebase_url": "https://masar-2020.firebaseio.com",
-    "project_id": "masar-2020",
-    "storage_bucket": "masar-2020.appspot.com"
+    "project_number": "671320118066",
+    "firebase_url": "https://masar-2019.firebaseio.com",
+    "project_id": "masar-2019",
+    "storage_bucket": "masar-2019.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:338687978964:android:dcc409cbdce5829fa43a41",
+        "mobilesdk_app_id": "1:671320118066:android:4536a45238ebe88926fd2b",
         "android_client_info": {
           "package_name": "com.masar.masarapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "338687978964-alssihq3u3radelma1elc727qf89marp.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.masar.masarapp",
-            "certificate_hash": "09876c5509e586442a29c39c4b8f6e6bd88a7f1f"
-          }
-        },
-        {
-          "client_id": "338687978964-lnpu6mg61g8cvkj4hb27mf0gpravjbin.apps.googleusercontent.com",
+          "client_id": "671320118066-i1q0gtijnq68nr0opbmri7fuj1tilva5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC85NTA8So5z1bPNg72azF6pz7C3xY2GN4"
+          "current_key": "AIzaSyBtrNltpkZ6giuLidYI1crPZrcq7zv23Ic"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "338687978964-lnpu6mg61g8cvkj4hb27mf0gpravjbin.apps.googleusercontent.com",
+              "client_id": "671320118066-i1q0gtijnq68nr0opbmri7fuj1tilva5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".LogIn">
+        tools:context="com.masar.masarapp.LogIn">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -16,10 +16,10 @@
             android:background="@drawable/splash"
             tools:context=".LogIn_SignUp"
             tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="-126dp">
+            tools:layout_editor_absoluteY="-235dp">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/signUpFloatingActionButton"
+                android:id="@+id/signUpBackFloatingActionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -55,17 +55,17 @@
                 android:id="@+id/singUpEmailEditText"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
-                android:layout_marginBottom="412dp"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/rounded_button"
                 android:drawableStart="@drawable/personicon"
                 android:drawableLeft="@drawable/personicon"
-                android:paddingLeft="30dp"
                 android:drawablePadding="-30dp"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="name@example.com"
                 android:inputType="textEmailAddress"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingLeft="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/singUpPasswordEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -73,17 +73,17 @@
                 android:id="@+id/singUpPasswordEditText"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
-                android:layout_marginBottom="344dp"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/rounded_button"
                 android:drawableStart="@drawable/openlockicon"
                 android:drawableLeft="@drawable/openlockicon"
-                android:paddingLeft="30dp"
                 android:drawablePadding="-30dp"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Password"
                 android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingLeft="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/singUpConfirmPasswordEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -91,34 +91,16 @@
                 android:id="@+id/singUpConfirmPasswordEditText"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
-                android:layout_marginBottom="276dp"
+                android:layout_marginBottom="208dp"
                 android:background="@drawable/rounded_button"
                 android:drawableStart="@drawable/openlockicon"
                 android:drawableLeft="@drawable/openlockicon"
-                android:paddingLeft="30dp"
                 android:drawablePadding="-30dp"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <EditText
-                android:id="@+id/singUpPhoneNoEditText"
-                android:layout_width="363dp"
-                android:layout_height="56dp"
-                android:layout_marginBottom="208dp"
-                android:background="@drawable/rounded_button"
-                android:drawableStart="@drawable/phoneicon"
-                android:drawableLeft="@drawable/phoneicon"
                 android:paddingLeft="30dp"
-                android:drawablePadding="-30dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Phone Number"
-                android:inputType="phone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -129,14 +111,15 @@
                 android:layout_height="56dp"
                 android:layout_marginBottom="44dp"
                 android:background="@drawable/rounded_button"
-                android:text="Next"
+                android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textColor="#FF9B70"
                 android:textSize="20sp"
                 app:fontFamily="@font/quicksand_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                android:onClick="navigation"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

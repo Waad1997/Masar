@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+    package="com.masar.masarapp">
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -10,11 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogIn" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SMSVerification" />
-        <activity android:name=".Welcome" />
-        <activity android:name=".Splash">
+        <activity android:name="com.masar.masarapp.LogIn" />
+        <activity android:name="com.masar.masarapp.SignUp" />
+        <activity android:name="com.masar.masarapp.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
