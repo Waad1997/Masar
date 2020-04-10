@@ -10,8 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.masar.masarapp.LogIn" />
-        <activity android:name="com.masar.masarapp.SignUp" />
+
         <activity android:name="com.masar.masarapp.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.masar.masarapp.LogIn" />
+        <activity android:name="com.masar.masarapp.SignUp" />
+        <activity android:name="com.masar.masarapp.MainActivity" />
+
     </application>
 
 </manifest>

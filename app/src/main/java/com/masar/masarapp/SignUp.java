@@ -17,10 +17,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -29,7 +31,7 @@ public class SignUp extends AppCompatActivity {
 
     private EditText txtEmail;
     private EditText txtPassword, txtPassword2;
-    private Button btnBack;
+    private FloatingActionButton btnBack;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -40,15 +42,16 @@ public class SignUp extends AppCompatActivity {
         txtEmail = (EditText) findViewById(R.id.singUpEmailEditText);
         txtPassword = (EditText) findViewById(R.id.singUpPasswordEditText);
         txtPassword2 = (EditText) findViewById(R.id.singUpConfirmPasswordEditText);
-        //btnBack = (Button) findViewById(R.id.signUpBackFloatingActionButton);
+        btnBack = findViewById(R.id.signUpBackFloatingActionButton);
         firebaseAuth = FirebaseAuth.getInstance();
 
- ////       btnBack.setOnClickListener(new View.OnClickListener() {
-     //       @Override
-       //     public void onClick(View v) {
-         //       startActivity(new Intent(SignUp.this, LogIn.class));
-           // }
-        //});
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignUp.this, LogIn.class));
+            }
+        });
 
 
     }
@@ -62,19 +65,30 @@ public class SignUp extends AppCompatActivity {
         final ProgressDialog progressDialog = ProgressDialog.show(SignUp.this, "Please wait...", "Processing...", true);
 
         (firebaseAuth.createUserWithEmailAndPassword(email, password))
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(SignUp.this, new OnCompleteListener<AuthResult>() {
 
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
 
                         if (task.isSuccessful()) {
-                            Toast.makeText(SignUp.this, "Registration successful", Toast.LENGTH_LONG).show();
-                            Intent i = new Intent(SignUp.this, MainActivity.class);
-                            startActivity(i);
+                            firebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if(task.isSuccessful()){
+                                        Toast.makeText(SignUp.this, "Registered successfully, please verify your email.", Toast.LENGTH_LONG).show();
+                                        Intent intent = new Intent(SignUp.this, LogIn.class);
+                                        startActivity(intent);
+                                    }
+                                    else{
+                                        Toast.makeText(SignUp.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                                    }
+
+                                }
+                            });
+
                         } else {
-                            Log.e("ERROR", task.getException().toString());
-                            Toast.makeText(SignUp.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            Log.e("ERROR AUTHENTICATION", "Password and confirmation do not match" + task.getException().getMessage());
                         }
                     }
                 });

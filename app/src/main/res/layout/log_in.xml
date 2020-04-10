@@ -14,6 +14,8 @@
         tools:layout_editor_absoluteX="184dp"
         tools:layout_editor_absoluteY="0dp">
 
+
+        <!-- Login Button -->
         <TextView
             android:id="@+id/logInWelcomeTextView"
             android:layout_width="wrap_content"
@@ -26,15 +28,13 @@
             android:textColor="#707070"
             android:textSize="24sp"
             android:textStyle="bold"
+            android:text="Welcome!"
             app:fontFamily="@font/quicksand_bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Welcome!" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-
-        <!-- Login Button -->
         <Button
             android:id="@+id/logInButton"
             android:layout_width="363dp"
@@ -86,17 +86,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/logInForgotPasswordTextView"
+        <!-- Sign up Button -->
+        <Button
+            android:id="@+id/logInForgotPasswordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="224dp"
-            android:text="Forgot Password?"
+            android:layout_marginBottom="204dp"
+            android:background="@android:color/transparent"
+            android:text="Forgot password?"
+            android:textAllCaps="false"
+            android:textColor="#23999c"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- Sign up Button -->
         <TextView
             android:id="@+id/logInNoAccountTextView"
             android:layout_width="wrap_content"

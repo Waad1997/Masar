@@ -106,7 +106,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/singUpNextButton"
+                android:id="@+id/singUpSignUpButton"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
                 android:layout_marginBottom="44dp"
