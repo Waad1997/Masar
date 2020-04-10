@@ -50,20 +50,25 @@ public class ResetPassword extends AppCompatActivity {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 AuthCredential credential = EmailAuthProvider.getCredential(user.getEmail(),currentPass);
 
-                if(!newPass.equals(confirmPass)) {
-                    Toast.makeText(ResetPassword.this, "Password does not match", Toast.LENGTH_LONG).show();
+                if(newPass.equals(confirmPass)) {
+//                    Toast.makeText(ResetPassword.this, "Password does not match", Toast.LENGTH_LONG).show();
 
-                } else {
+//                } else {
+
                     user.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()) {
                                 user.updatePassword(newPass).addOnCompleteListener(new OnCompleteListener<Void>() {
+
+
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if(task.isSuccessful()) {
+
+
                                             Toast.makeText(ResetPassword.this, "Password has been changed", Toast.LENGTH_LONG).show();
-                                        } else {
+                                        } else if (!newPass.equals(confirmPass) ){
                                             Toast.makeText(ResetPassword.this, "Error", Toast.LENGTH_LONG).show();
 
                                         }

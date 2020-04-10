@@ -87,7 +87,7 @@ public class LogIn extends AppCompatActivity {
 
                                     Toast.makeText(LogIn.this, task.getException().getMessage().toString(), Toast.LENGTH_LONG).show();
                                 } else {
-                                    Intent intent = new Intent(LogIn.this, MainActivity.class);
+                                    Intent intent = new Intent(LogIn.this, MasarMenu.class);
                                     startActivity(intent);
                                     finish();
                                 }
