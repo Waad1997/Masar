@@ -18,20 +18,7 @@
             tools:layout_editor_absoluteX="-16dp"
             tools:layout_editor_absoluteY="-235dp">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/signUpBackFloatingActionButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:clickable="true"
-                app:backgroundTint="@android:color/transparent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.067"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:rippleColor="#00FAF7F7"
-                app:srcCompat="@drawable/righttail" />
-
+            <!-- retrived data shown in this textview -->
             <TextView
                 android:id="@+id/signUpLetsGetStartedTextView"
                 android:layout_width="wrap_content"
@@ -50,6 +37,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <!-- used to enter the data and get saved in bundle-->
             <EditText
                 android:id="@+id/singUpEmailEditText"
                 android:layout_width="363dp"
@@ -67,6 +55,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/singUpPasswordEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
 
             <EditText
                 android:id="@+id/singUpPasswordEditText"

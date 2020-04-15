@@ -31,7 +31,6 @@ public class SignUp extends AppCompatActivity {
 
     private EditText txtEmail;
     private EditText txtPassword, txtPassword2;
-    private FloatingActionButton btnBack;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -42,16 +41,7 @@ public class SignUp extends AppCompatActivity {
         txtEmail = (EditText) findViewById(R.id.singUpEmailEditText);
         txtPassword = (EditText) findViewById(R.id.singUpPasswordEditText);
         txtPassword2 = (EditText) findViewById(R.id.singUpConfirmPasswordEditText);
-        btnBack = findViewById(R.id.signUpBackFloatingActionButton);
         firebaseAuth = FirebaseAuth.getInstance();
-
-
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SignUp.this, LogIn.class));
-            }
-        });
 
 
     }
