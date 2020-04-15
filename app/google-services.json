@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "671320118066-gqsenehpsv41fjevmkmufnlqcgogdvaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masar.masarapp",
+            "certificate_hash": "4249ecc5eee8618b76a36002d0e00411b2e915c3"
+          }
+        },
+        {
           "client_id": "671320118066-i1q0gtijnq68nr0opbmri7fuj1tilva5.apps.googleusercontent.com",
           "client_type": 3
         }

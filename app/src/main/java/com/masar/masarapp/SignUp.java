@@ -46,6 +46,8 @@ public class SignUp extends AppCompatActivity {
 
     }
 
+    //The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase
+
     public void navigation(View v) {
 
         String email = txtEmail.getText().toString().trim();

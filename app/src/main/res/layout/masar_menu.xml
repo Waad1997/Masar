@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MasarMenu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appbar"
@@ -16,26 +16,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/masarMenuBackButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="335dp"
-            android:layout_marginRight="335dp"
-            android:layout_marginBottom="124dp"
-            android:clickable="true"
-            app:backgroundTint="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/tail_right2" />
 
         <TextView
             android:id="@+id/masarMenu"
@@ -69,12 +49,12 @@
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
         android:layout_marginBottom="387dp"
-        android:background="#FFFFFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_menu" />
+        app:srcCompat="@drawable/home_menu_button" />
 
     <ImageButton
         android:id="@+id/masarMenuProfileButton"
@@ -86,12 +66,12 @@
         android:layout_marginEnd="146dp"
         android:layout_marginRight="146dp"
         android:layout_marginBottom="387dp"
-        android:background="#FFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_menu" />
+        app:srcCompat="@drawable/profile_menu_button" />
 
     <ImageButton
         android:id="@+id/masarMenuSupportsButton"
@@ -103,12 +83,12 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="387dp"
-        android:background="#FFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/support_menu" />
+        app:srcCompat="@drawable/support_menu_button" />
 
     <ImageButton
         android:id="@+id/masarMenuSettingsButton"
@@ -120,12 +100,12 @@
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
         android:layout_marginBottom="246dp"
-        android:background="#FFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/settings_menu" />
+        app:srcCompat="@drawable/settings_menu_button" />
 
     <ImageButton
         android:id="@+id/masarMenuFqaButton"
@@ -137,12 +117,12 @@
         android:layout_marginEnd="146dp"
         android:layout_marginRight="146dp"
         android:layout_marginBottom="246dp"
-        android:background="#FFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/faq_menu" />
+        app:srcCompat="@drawable/faq_menu_button" />
 
     <ImageButton
         android:id="@+id/masarMenuNotificationButton"
@@ -154,12 +134,12 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="246dp"
-        android:background="#FFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nofi_menu" />
+        app:srcCompat="@drawable/nofi_menu_button" />
 
     <ImageButton
         android:id="@+id/masarMenuSignoutButton"
@@ -171,11 +151,11 @@
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
         android:layout_marginBottom="109dp"
-        android:background="#FFF"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/signout_menu" />
+        app:srcCompat="@drawable/signou_menu_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

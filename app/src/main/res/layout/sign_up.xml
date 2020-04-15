@@ -18,7 +18,10 @@
             tools:layout_editor_absoluteX="-16dp"
             tools:layout_editor_absoluteY="-235dp">
 
+<<<<<<< HEAD
             <!-- retrived data shown in this textview -->
+=======
+>>>>>>> origin/Maha
             <TextView
                 android:id="@+id/signUpLetsGetStartedTextView"
                 android:layout_width="wrap_content"

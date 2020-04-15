@@ -36,6 +36,7 @@ public class LogIn extends AppCompatActivity {
         btnLog = (Button) findViewById(R.id.logInButton);
         btnRes = (Button) findViewById(R.id.logInForgotPasswordButton);
 
+
         btnSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,6 +94,15 @@ public class LogIn extends AppCompatActivity {
                                     }
                             } else {
                                     Log.e("ERROR AUTHENTICATION", "Password and confirmation do not match" + task.getException().getMessage());
+<<<<<<< HEAD
+=======
+
+                                    Toast.makeText(LogIn.this, task.getException().getMessage().toString(), Toast.LENGTH_LONG).show();
+                                } else {
+                                    Intent intent = new Intent(LogIn.this, MasarMenu.class);
+                                    startActivity(intent);
+                                    finish();
+>>>>>>> origin/Maha
                                 }
                             }
                         });
