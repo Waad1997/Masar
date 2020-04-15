@@ -6,199 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
-
-    <TextView
-        android:id="@+id/profileResetPass"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="482dp"
-        android:layout_marginBottom="215dp"
-        android:baselineAligned="false"
-        android:fontFamily=""
-        android:lineSpacingExtra="1.5sp"
-        android:text="Reset Password"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#707070"
-        android:textSize="24sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/profileName"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginBottom="558dp"
-        android:baselineAligned="false"
-        android:fontFamily=""
-        android:lineSpacingExtra="1.5sp"
-        android:text="Full Name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#707070"
-        android:textSize="24sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/profileBirthday"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="244dp"
-        android:layout_marginBottom="461dp"
-        android:baselineAligned="false"
-        android:fontFamily=""
-        android:lineSpacingExtra="1.5sp"
-        android:text="Birthday"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#707070"
-        android:textSize="24sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/profileBirthdaytextInputEditText"
-        android:layout_width="379dp"
-        android:layout_height="46dp"
-
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="415dp"
-        android:hint="dd/mm/yyyy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/profileEmail"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="334dp"
-        android:layout_marginBottom="371dp"
-        android:baselineAligned="false"
-        android:fontFamily=""
-        android:lineSpacingExtra="1.5sp"
-        android:text="Email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#707070"
-        android:textSize="24sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/profileEmailTextInputEditText"
-        android:layout_width="379dp"
-        android:layout_height="46dp"
-
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="325dp"
-        android:hint="Enter your email"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/profileGender"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="421dp"
-        android:layout_marginBottom="276dp"
-        android:baselineAligned="false"
-        android:fontFamily=""
-        android:lineSpacingExtra="1.5sp"
-        android:text="Gender"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#707070"
-        android:textSize="24sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/profileNameTextInputEditText"
-        android:layout_width="379dp"
-        android:layout_height="46dp"
-
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="173dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="512dp"
-        android:hint="Enter your name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
@@ -206,8 +13,10 @@
         android:layout_marginBottom="622dp"
         android:background="#FF9B70"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/profileProfile"
@@ -220,7 +29,6 @@
             android:layout_marginRight="170dp"
             android:layout_marginBottom="51dp"
             android:baselineAligned="false"
-            android:fontFamily=""
             android:lineSpacingExtra="1.5sp"
             android:text="Profile"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -230,70 +38,74 @@
             app:layout_anchorGravity="bottom|center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/profileBackButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="336dp"
-            android:layout_marginRight="336dp"
-            android:layout_marginBottom="38dp"
-            android:clickable="true"
-            app:backgroundTint="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.401"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tail_right2" />
+            app:layout_constraintVertical_bias="0.0" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <RadioButton
-        android:id="@+id/profileFemaleRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
-        android:layout_marginTop="423dp"
-        android:layout_marginEnd="184dp"
-        android:layout_marginRight="184dp"
-        android:layout_marginBottom="276dp"
-        android:baselineAligned="false"
-        android:fontFamily=""
-        android:lineSpacingExtra="1.5sp"
+
+    <TextView
+        android:id="@+id/tx_female"
+        android:layout_width="84dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginBottom="240dp"
+        android:clickable="true"
         android:text="Female"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#707070"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_male"
+        android:layout_width="53dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="291dp"
+        android:layout_marginLeft="291dp"
+        android:layout_marginTop="454dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginBottom="244dp"
+        android:clickable="true"
+        android:text="Male"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#707070"
+        android:textSize="20sp"
         app:fontFamily="@font/quicksand_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/profileMaleRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="254dp"
-        android:layout_marginLeft="254dp"
-        android:layout_marginTop="423dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="276dp"
+    <TextView
+        android:id="@+id/profileResetPass"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="186dp"
         android:baselineAligned="false"
-        android:fontFamily=""
         android:lineSpacingExtra="1.5sp"
-        android:text="Male"
+        android:text="Reset Password"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#707070"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:fontFamily="@font/quicksand_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -306,10 +118,10 @@
         android:layout_height="60dp"
         android:layout_marginStart="336dp"
         android:layout_marginLeft="336dp"
-        android:layout_marginTop="473dp"
+        android:layout_marginTop="492dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginBottom="207dp"
+        android:layout_marginBottom="188dp"
         android:clickable="true"
         app:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -318,12 +130,178 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/next" />
 
+    <TextView
+        android:id="@+id/profileGender"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="449dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginRight="292dp"
+        android:layout_marginBottom="245dp"
+        android:baselineAligned="false"
+        android:lineSpacingExtra="1.5sp"
+        android:text="Gender"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#707070"
+        android:textSize="24sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="367dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="526dp"
+        android:baselineAligned="false"
+        android:lineSpacingExtra="1.5sp"
+        android:text="Full Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#707070"
+        android:textSize="24sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/profileNameTextInputEditText"
+        android:layout_width="379dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="484dp"
+        android:hint="Enter your name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileBirthday"
+        android:layout_width="381dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="430dp"
+        android:baselineAligned="false"
+        android:lineSpacingExtra="1.5sp"
+        android:text="Birthday"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#707070"
+        android:textSize="24sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/profileBirthdaytextInputEditText"
+        android:layout_width="379dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="387dp"
+        android:hint="dd/mm/yyyy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="367dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="341dp"
+        android:baselineAligned="false"
+        android:lineSpacingExtra="1.5sp"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#707070"
+        android:textSize="24sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/profileEmailTextInputEditText"
+        android:layout_width="367dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="295dp"
+        android:baselineAligned="false"
+        android:lineSpacingExtra="1.5sp"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <Button
         android:id="@+id/profileSaveButton"
         android:layout_width="363dp"
         android:layout_height="56dp"
-        android:layout_marginTop="552dp"
-        android:layout_marginBottom="123dp"
+        android:layout_marginTop="553dp"
+        android:layout_marginBottom="122dp"
         android:background="@drawable/rounded_button_orange"
         android:text="Save"
         android:textColor="#FFFFFF"
@@ -331,14 +309,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="413dp"
         android:layout_height="69dp"
-        android:layout_marginTop="628dp"
+        android:layout_marginTop="629dp"
         android:layout_marginBottom="34dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -346,6 +323,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottom_navigation" />
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/profileGenderRadioGroup"-->
+    <!--        android:layout_width="185dp"-->
+    <!--        android:layout_height="51dp"-->
+    <!--        android:layout_marginStart="151dp"-->
+    <!--        android:layout_marginLeft="151dp"-->
+    <!--        android:layout_marginTop="450dp"-->
+    <!--        android:layout_marginEnd="75dp"-->
+    <!--        android:layout_marginRight="75dp"-->
+    <!--        android:layout_marginBottom="230dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/profileFemaleRadioButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Female"-->
+    <!--            android:textColor="#707070"-->
+    <!--            android:textSize="18sp"-->
+    <!--            app:fontFamily="@font/quicksand_bold"-->
+    <!--            android:onClick="onRadioButtonClicked"/>-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/profileMaleRadioButton"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Male"-->
+    <!--            android:textColor="#707070"-->
+    <!--            android:textSize="18sp"-->
+    <!--            app:fontFamily="@font/quicksand_bold"-->
+    <!--            android:onClick="onRadioButtonClicked"/>-->
+    <!--    </RadioGroup>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

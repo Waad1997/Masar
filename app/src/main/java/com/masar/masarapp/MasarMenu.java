@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MasarMenu extends AppCompatActivity {
   //  private ImageButton home;
     private ImageButton profile;
@@ -15,13 +17,20 @@ public class MasarMenu extends AppCompatActivity {
     private ImageButton faq;
     private ImageButton notificatio;
     private ImageButton signout;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.masar_menu);
 
-       // home = (ImageButton) findViewById(R.id.masarMenuHomeButton);
+        // uses the firebase instense for the user signs out
+        firebaseAuth = FirebaseAuth.getInstance();
+
+
+
+        // calling all the buttons in the xml code to give them a function
+       //home = (ImageButton) findViewById(R.id.masarMenuHomeButton);
         profile = (ImageButton) findViewById(R.id.masarMenuProfileButton);
         support = (ImageButton) findViewById(R.id.masarMenuSupportsButton);
         settings = (ImageButton) findViewById(R.id.masarMenuSettingsButton);
@@ -30,6 +39,7 @@ public class MasarMenu extends AppCompatActivity {
         signout = (ImageButton) findViewById(R.id.masarMenuSignoutButton);
        // home.setOnClickListener(new View.OnClickListener()
 
+        // opens the profile page
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +49,8 @@ public class MasarMenu extends AppCompatActivity {
             }
         });
 
+
+        // opens the support page
         support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +60,8 @@ public class MasarMenu extends AppCompatActivity {
             }
         });
 
+
+        // opens the settings page
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +71,8 @@ public class MasarMenu extends AppCompatActivity {
             }
         });
 
+
+        // opens the faq page
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +83,7 @@ public class MasarMenu extends AppCompatActivity {
         });
 
 
+        // opens the notificatio page
         notificatio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,11 +93,14 @@ public class MasarMenu extends AppCompatActivity {
             }
         });
 
+
+        // signs out the user and opens the log in page
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                  firebaseAuth.signOut();
+                  finish();
                 Intent intent = new Intent(MasarMenu.this, LogIn.class);
-
                 startActivity(intent);
             }
         });

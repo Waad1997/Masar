@@ -29,12 +29,11 @@ public class ResetPassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reset_password);
 
-        mCurrentPass = findViewById(R.id.resetPasswordCurrentPasswordEditText);
-        mNewPass = findViewById(R.id.resetPasswordNewPasswordEditText);
-        mConfirmPass = findViewById(R.id.resetPasswordConfirmPasswordEditText);
-
-
-        mReset = findViewById(R.id.resetPasswordSaveButton);
+        // calling all the components in the xml code to give them a function
+        mCurrentPass = (EditText) findViewById(R.id.resetPasswordCurrentPasswordEditText);
+        mNewPass = (EditText)  findViewById(R.id.resetPasswordNewPasswordEditText);
+        mConfirmPass = (EditText)  findViewById(R.id.resetPasswordConfirmPasswordEditText);
+        mReset = (Button) findViewById(R.id.resetPasswordSaveButton);
 
 
         mReset.setOnClickListener(new View.OnClickListener() {
@@ -43,18 +42,25 @@ public class ResetPassword extends AppCompatActivity {
 
                 String currentPass, newPass, confirmPass;
 
+                // converting all text into strings and trimming it
                 currentPass = mCurrentPass.getText().toString().trim();
                 newPass = mNewPass.getText().toString().trim();
                 confirmPass = mConfirmPass.getText().toString().trim();
 
+                // getting the user who is logged in
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+                // the user's credential which are email and the current password
                 AuthCredential credential = EmailAuthProvider.getCredential(user.getEmail(),currentPass);
 
-                if(newPass.equals(confirmPass)) {
-//                    Toast.makeText(ResetPassword.this, "Password does not match", Toast.LENGTH_LONG).show();
+                if(!newPass.equals(confirmPass)) {
+                    Toast.makeText(ResetPassword.this, "Password does not match", Toast.LENGTH_LONG).show();
 
-//                } else {
+                }
 
+
+                else {
+                    // changing the password (reauthenticating)
                     user.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
@@ -68,12 +74,15 @@ public class ResetPassword extends AppCompatActivity {
 
 
                                             Toast.makeText(ResetPassword.this, "Password has been changed", Toast.LENGTH_LONG).show();
-                                        } else if (!newPass.equals(confirmPass) ){
-                                            Toast.makeText(ResetPassword.this, "Error", Toast.LENGTH_LONG).show();
+
 
                                         }
+
+
                                     }
                                 });
+                            } else {
+                                Toast.makeText(ResetPassword.this, "Current password is incorrect", Toast.LENGTH_LONG).show();
                             }
                         }
                     });
@@ -85,13 +94,6 @@ public class ResetPassword extends AppCompatActivity {
         });
 
 
-//        mReset.setOnClickListener(this);
-
     }
 
-//    @Override
-//    public void onClick(View v) {
-//
-//
-//    }
 }

@@ -2,27 +2,25 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".AddCover">
 
     <TextView
-        android:id="@+id/addCoverEnterIMEI"
+        android:id="@+id/addCoverEnterIMEI3"
         android:layout_width="318dp"
         android:layout_height="35dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="147dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
-        android:layout_marginBottom="558dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="535dp"
         android:baselineAligned="false"
-        android:fontFamily=""
         android:lineSpacingExtra="1.5sp"
         android:text="You can find it in the product box"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -32,68 +30,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addCoverAddCover3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginBottom="51dp"
+        android:baselineAligned="false"
+        android:lineSpacingExtra="1.5sp"
+        android:text="Add Cover "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/quicksand_bold"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_marginBottom="622dp"
-        android:background="#FF9B70"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:id="@+id/addCoverAddCover"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
-            android:layout_marginLeft="164dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="170dp"
-            android:layout_marginRight="170dp"
-            android:layout_marginBottom="51dp"
-            android:baselineAligned="false"
-            android:fontFamily=""
-            android:lineSpacingExtra="1.5sp"
-            android:text="Add Cover "
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            app:fontFamily="@font/quicksand_bold"
-            app:layout_anchorGravity="bottom|center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.401"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/addCoverBackButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="336dp"
-            android:layout_marginRight="336dp"
-            android:layout_marginBottom="38dp"
-            android:clickable="true"
-            app:backgroundTint="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tail_right2" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <ImageView
-        android:id="@+id/addCoverIcon"
+        android:id="@+id/addCoverIcon3"
         android:layout_width="310dp"
         android:layout_height="262dp"
         android:layout_marginStart="30dp"
@@ -111,10 +76,11 @@
         app:srcCompat="@drawable/addcovericon" />
 
     <EditText
-        android:id="@+id/addCoverIMEIEditText"
+        android:id="@+id/addCoverIMEIEditText3"
         android:layout_width="363dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginBottom="470dp"
         android:background="@drawable/rounded_button"
         android:drawableStart="@drawable/qr1"
         android:drawableLeft="@drawable/qr1"
@@ -126,11 +92,11 @@
         android:paddingLeft="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/addCoverNextButton"
+        android:id="@+id/addCoverNextButton3"
         android:layout_width="363dp"
         android:layout_height="56dp"
         android:layout_marginStart="24dp"
@@ -150,16 +116,56 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="674dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="413dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="628dp"
+        android:layout_marginBottom="34dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottom_navigation" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginBottom="622dp"
+        android:background="#FF9B70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/addCoverAddCover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="170dp"
+            android:layout_marginRight="170dp"
+            android:layout_marginBottom="51dp"
+            android:baselineAligned="false"
+            android:lineSpacingExtra="1.5sp"
+            android:text="Add Cover"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:fontFamily="@font/quicksand_bold"
+            app:layout_anchorGravity="bottom|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.401"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
