@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.masar.masarapp.SignUp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash"
+            tools:context=".LogIn_SignUp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="-235dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/signUpBackFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                app:backgroundTint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="#00FAF7F7"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+            <TextView
+                android:id="@+id/signUpLetsGetStartedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="1.5sp"
+                android:text="Let's Get Started!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#707070"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/quicksand_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signUpBackFloatingActionButton" />
+
+            <EditText
+                android:id="@+id/singUpEmailEditText"
+                android:layout_width="363dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="96dp"
+                android:background="@drawable/rounded_button"
+                android:drawablePadding="-30dp"
+                android:ems="10"
+                android:hint="Name@example.com"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signUpLetsGetStartedTextView" />
+
+            <EditText
+                android:id="@+id/singUpPasswordEditText"
+                android:layout_width="363dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_button"
+                android:drawablePadding="-30dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singUpEmailEditText" />
+
+            <EditText
+                android:id="@+id/singUpConfirmPasswordEditText"
+                android:layout_width="363dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_button"
+                android:drawablePadding="-30dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singUpPasswordEditText" />
+
+            <Button
+                android:id="@+id/singup_Button"
+                android:layout_width="363dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/rounded_button"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#FF9B70"
+                android:textSize="20sp"
+                app:fontFamily="@font/quicksand_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singUpConfirmPasswordEditText"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

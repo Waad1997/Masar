@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "671320118066",
+    "firebase_url": "https://masar-2019.firebaseio.com",
+    "project_id": "masar-2019",
+    "storage_bucket": "masar-2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671320118066:android:4536a45238ebe88926fd2b",
+        "android_client_info": {
+          "package_name": "com.masar.masarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671320118066-i1q0gtijnq68nr0opbmri7fuj1tilva5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key":[
+        {
+          "current_key": "AIzaSyBtrNltpkZ6giuLidYI1crPZrcq7zv23Ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671320118066-i1q0gtijnq68nr0opbmri7fuj1tilva5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
