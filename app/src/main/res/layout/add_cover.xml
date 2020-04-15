@@ -85,8 +85,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tail_right2" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -105,8 +104,7 @@
         app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/addcovericon" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/addCoverIMEIEditText"
@@ -114,8 +112,6 @@
         android:layout_height="56dp"
         android:layout_marginBottom="488dp"
         android:background="@drawable/rounded_button"
-        android:drawableStart="@drawable/qr1"
-        android:drawableLeft="@drawable/qr1"
         android:drawablePadding="-30dp"
         android:ems="10"
         android:gravity="center"

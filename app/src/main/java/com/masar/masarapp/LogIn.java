@@ -30,11 +30,11 @@ public class LogIn extends AppCompatActivity {
         setContentView(R.layout.log_in);
 
 
-        inputEmail = (EditText) findViewById(R.id.logInEmailEditText);
-        inputPassword = (EditText) findViewById(R.id.logInPasswordeEditText);
-        btnSign = (Button) findViewById(R.id.logInSignUpButton);
-        btnLog = (Button) findViewById(R.id.logInButton);
-        btnRes = (Button) findViewById(R.id.logInForgotPasswordButton);
+        inputEmail = findViewById(R.id.logInEmailEditText);
+        inputPassword = findViewById(R.id.logInPasswordeEditText);
+        btnSign = findViewById(R.id.logInSignUpButton);
+        btnLog = findViewById(R.id.logInButton);
+        btnRes = findViewById(R.id.logInForgotPasswordButton);
 
         btnSign.setOnClickListener(new View.OnClickListener() {
             @Override

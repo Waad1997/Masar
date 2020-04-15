@@ -242,7 +242,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tail_right2" />
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -308,7 +308,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/next" />
+         />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

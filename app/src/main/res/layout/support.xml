@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".SupportActivity">
 
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_marginBottom="553dp"
         android:baselineAligned="false"
         android:lineSpacingExtra="1.5sp"
-        android:text="What do you need from us ?"
+        android:text="Your feedback is valuable"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#707070"
         android:textSize="18sp"
@@ -84,9 +85,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tail_right2" />
+             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:id="@+id/et_Subject"
+        android:layout_width="363dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="480dp"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="-30dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Subject"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <EditText
         android:id="@+id/supportProblemEditText"
@@ -97,28 +116,13 @@
         android:drawablePadding="-30dp"
         android:ems="10"
         android:gravity="left"
-        android:hint="Enter your problem"
+        android:hint="Feedback"
         android:inputType="text"
         android:paddingLeft="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/supportEmailEditText"
-        android:layout_width="363dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="480dp"
-        android:background="@drawable/rounded_button"
-        android:drawablePadding="-30dp"
-        android:ems="10"
-        android:gravity="left"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/supportSendButton"
@@ -147,5 +151,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottom_navigation" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
