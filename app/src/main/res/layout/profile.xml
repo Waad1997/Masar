@@ -279,7 +279,6 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-<<<<<<< HEAD
         android:layout_marginTop="173dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
@@ -290,112 +289,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_marginBottom="622dp"
-        android:background="#FF9B70"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/profileProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
-            android:layout_marginLeft="164dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="170dp"
-            android:layout_marginRight="170dp"
-            android:layout_marginBottom="51dp"
-            android:baselineAligned="false"
-            android:lineSpacingExtra="1.5sp"
-            android:text="Profile"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            app:fontFamily="@font/quicksand_bold"
-            app:layout_anchorGravity="bottom|center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/profileBackButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="19dp"
-            android:layout_marginLeft="19dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="336dp"
-            android:layout_marginRight="336dp"
-            android:layout_marginBottom="38dp"
-            android:clickable="true"
-            app:backgroundTint="@android:color/transparent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-             />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <RadioButton
-        android:id="@+id/profileFemaleRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginLeft="117dp"
-        android:layout_marginTop="474dp"
-        android:layout_marginEnd="196dp"
-        android:layout_marginRight="196dp"
-        android:layout_marginBottom="225dp"
-=======
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="295dp"
->>>>>>> origin/Maha
-        android:baselineAligned="false"
-        android:lineSpacingExtra="1.5sp"
-        android:text="Email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<<<<<<< HEAD
-    <RadioButton
-        android:id="@+id/profileMaleRadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="227dp"
-        android:layout_marginLeft="227dp"
-        android:layout_marginTop="473dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginRight="111dp"
-        android:layout_marginBottom="226dp"
-        android:baselineAligned="false"
-        android:lineSpacingExtra="1.5sp"
-        android:text="Male"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#707070"
-        android:textSize="18sp"
-        app:fontFamily="@font/quicksand_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-=======
->>>>>>> origin/Maha
 
     <Button
         android:id="@+id/profileSaveButton"
@@ -410,14 +303,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toTopOf="parent" />
-=======
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-         />
+    app:layout_constraintTop_toTopOf="parent" />
 
->>>>>>> Waad
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
@@ -431,44 +318,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottom_navigation" />
-
-    <!--    <RadioGroup-->
-    <!--        android:id="@+id/profileGenderRadioGroup"-->
-    <!--        android:layout_width="185dp"-->
-    <!--        android:layout_height="51dp"-->
-    <!--        android:layout_marginStart="151dp"-->
-    <!--        android:layout_marginLeft="151dp"-->
-    <!--        android:layout_marginTop="450dp"-->
-    <!--        android:layout_marginEnd="75dp"-->
-    <!--        android:layout_marginRight="75dp"-->
-    <!--        android:layout_marginBottom="230dp"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        tools:ignore="MissingConstraints">-->
-
-    <!--        <RadioButton-->
-    <!--            android:id="@+id/profileFemaleRadioButton"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="Female"-->
-    <!--            android:textColor="#707070"-->
-    <!--            android:textSize="18sp"-->
-    <!--            app:fontFamily="@font/quicksand_bold"-->
-    <!--            android:onClick="onRadioButtonClicked"/>-->
-
-    <!--        <RadioButton-->
-    <!--            android:id="@+id/profileMaleRadioButton"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="Male"-->
-    <!--            android:textColor="#707070"-->
-    <!--            android:textSize="18sp"-->
-    <!--            app:fontFamily="@font/quicksand_bold"-->
-    <!--            android:onClick="onRadioButtonClicked"/>-->
-    <!--    </RadioGroup>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

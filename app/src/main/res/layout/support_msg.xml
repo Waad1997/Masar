@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SupportMsg">
+    tools:context="com.masar.masarapp.SupportActivity">
 
     <TextView
         android:id="@+id/supportMsgConfirm1"
@@ -93,8 +93,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-<<<<<<< HEAD
-=======
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/supportMsgBackButton"
             android:layout_width="wrap_content"
@@ -113,7 +111,6 @@
             app:layout_constraintTop_toTopOf="parent"
              />
 
->>>>>>> Waad
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

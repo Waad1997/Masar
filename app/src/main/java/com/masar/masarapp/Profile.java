@@ -32,8 +32,6 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
 
     private EditText Pname, Pdate;
     private TextView Pemail,txmale,txfemale;
-    private RadioButton Pfemale, Pmale;
-    private RadioGroup Pgender;
     private Button Psave;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;

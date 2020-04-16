@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddCoverMsg">
+    tools:context="com.masar.masarapp.AddCoverMsg">
 
     <TextView
         android:id="@+id/addCoverMsgConfirm2"
@@ -72,18 +72,6 @@
         app:layout_constraintVertical_bias="0.562"
         app:srcCompat="@drawable/addcovericon" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="413dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="628dp"
-        android:layout_marginBottom="34dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/bottom_navigation" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/appbar"
@@ -122,8 +110,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-<<<<<<< HEAD
-=======
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addCoverMsgBackButton"
             android:layout_width="wrap_content"
@@ -141,11 +127,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
->>>>>>> Waad
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-<<<<<<< HEAD
     <ImageView
         android:id="@+id/addCoverMsgIcon"
         android:layout_width="310dp"
@@ -172,7 +156,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottom_navigation" />
-=======
->>>>>>> origin/Maha
 
 </androidx.constraintlayout.widget.ConstraintLayout>

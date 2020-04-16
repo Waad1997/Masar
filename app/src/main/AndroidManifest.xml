@@ -3,10 +3,7 @@
     package="com.masar.masarapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< HEAD
-=======
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
->>>>>>> Waad
 
     <application
         android:allowBackup="true"
@@ -16,12 +13,16 @@
         android:supportsRtl="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-        <activity android:name="com.masar.masarapp.Splash">
-=======
-        <activity android:name=".AddCoverMsg"></activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddCoverMsg"/>
         <activity android:name=".AddCover" />
         <activity android:name=".Notification" />
         <activity android:name=".Settings" />
@@ -33,22 +34,9 @@
         <activity android:name=".MasarMenu" />
         <activity android:name=".LogIn" />
         <activity android:name=".SignUp" />
-        <activity android:name=".Splash">
->>>>>>> origin/Maha
-=======
-        <activity android:name=".Splash">
->>>>>>> Waad
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".LogIn" />
-        <activity android:name=".SignUp" />
+        <activity android:name=".MapsActivity" />
         <activity android:name=".SupportActivity"/>
         <activity android:name=".MainActivity" />
-        <activity android:name=".SupportMsg" />
 
     </application>
 

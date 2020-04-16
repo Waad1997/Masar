@@ -47,11 +47,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     }
 
-<<<<<<< HEAD
-    //The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase
 
-    public void navigation(View v) {
-=======
+    //The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase
 
     @Override
     public void onClick(View view) {
@@ -69,7 +66,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
     public void navigation() {
->>>>>>> Waad
+
 
         String email = txtEmail.getText().toString().trim();
         String password = txtPassword.getText().toString().trim();

@@ -18,12 +18,8 @@
             tools:layout_editor_absoluteX="-16dp"
             tools:layout_editor_absoluteY="-235dp">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             <!-- retrived data shown in this textview -->
-=======
->>>>>>> origin/Maha
-=======
+
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/signUpBackFloatingActionButton"
                 android:layout_width="wrap_content"
@@ -38,7 +34,6 @@
                 app:rippleColor="#00FAF7F7"
                 android:src="@drawable/ic_arrow_back_black_24dp"/>
 
->>>>>>> Waad
             <TextView
                 android:id="@+id/signUpLetsGetStartedTextView"
                 android:layout_width="wrap_content"
@@ -111,6 +106,7 @@
                 android:textAllCaps="false"
                 android:textColor="#FF9B70"
                 android:textSize="20sp"
+                android:onClick="navigation"
                 app:fontFamily="@font/quicksand_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -85,7 +85,7 @@ public class LogIn extends AppCompatActivity {
 
                                 if (task.isSuccessful()) {
                                     if (auth.getCurrentUser().isEmailVerified()) {
-                                        Intent intent = new Intent(LogIn.this, MainActivity.class);
+                                        Intent intent = new Intent(LogIn.this, MasarMenu.class);
                                         startActivity(intent);
                                         finish();
                                     } else {
@@ -94,15 +94,8 @@ public class LogIn extends AppCompatActivity {
                                     }
                             } else {
                                     Log.e("ERROR AUTHENTICATION", "Password and confirmation do not match" + task.getException().getMessage());
-<<<<<<< HEAD
-=======
 
                                     Toast.makeText(LogIn.this, task.getException().getMessage().toString(), Toast.LENGTH_LONG).show();
-                                } else {
-                                    Intent intent = new Intent(LogIn.this, MasarMenu.class);
-                                    startActivity(intent);
-                                    finish();
->>>>>>> origin/Maha
                                 }
                             }
                         });

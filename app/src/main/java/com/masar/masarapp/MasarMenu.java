@@ -10,7 +10,8 @@ import android.widget.ImageButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MasarMenu extends AppCompatActivity {
-  //  private ImageButton home;
+
+    private ImageButton home;
     private ImageButton profile;
     private ImageButton support;
     private ImageButton settings;
@@ -30,14 +31,21 @@ public class MasarMenu extends AppCompatActivity {
 
 
         // calling all the buttons in the xml code to give them a function
-       //home = (ImageButton) findViewById(R.id.masarMenuHomeButton);
+       home = (ImageButton) findViewById(R.id.masarMenuHomeButton);
         profile = (ImageButton) findViewById(R.id.masarMenuProfileButton);
         support = (ImageButton) findViewById(R.id.masarMenuSupportsButton);
         settings = (ImageButton) findViewById(R.id.masarMenuSettingsButton);
         faq = (ImageButton) findViewById(R.id.masarMenuFqaButton);
         notificatio = (ImageButton) findViewById(R.id.masarMenuNotificationButton);
         signout = (ImageButton) findViewById(R.id.masarMenuSignoutButton);
-       // home.setOnClickListener(new View.OnClickListener()
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MasarMenu.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // opens the profile page
         profile.setOnClickListener(new View.OnClickListener() {
