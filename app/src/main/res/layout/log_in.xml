@@ -1,131 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.masar.masarapp.LogIn">
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
         android:background="@drawable/splash"
-        tools:context="com.masar.masarapp.Welcome"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.masar.masarapp.Welcome">
 
 
         <!-- Login Button -->
+
         <TextView
             android:id="@+id/logInWelcomeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="132dp"
+            android:layout_marginTop="116dp"
             android:gravity="center_horizontal"
             android:lineSpacingExtra="1.5sp"
+            android:text="Welcome!"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#707070"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:text="Welcome!"
             app:fontFamily="@font/quicksand_bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Sign up Button -->
 
         <Button
             android:id="@+id/logInButton"
             android:layout_width="363dp"
             android:layout_height="56dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="84dp"
             android:background="@drawable/rounded_button"
             android:text="Log In"
             android:textAllCaps="false"
             android:textColor="#FF9B70"
             android:textSize="20sp"
             app:fontFamily="@font/quicksand_bold"
-            app:layout_constraintBottom_toTopOf="@+id/logInNoAccountTextView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logInForgotPasswordButton" />
 
         <EditText
             android:id="@+id/logInPasswordeEditText"
             android:layout_width="363dp"
             android:layout_height="56dp"
-            android:layout_marginBottom="252dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/rounded_button"
-            android:drawableStart="@drawable/openlockicon"
-            android:drawableLeft="@drawable/openlockicon"
             android:drawablePadding="-30dp"
             android:ems="10"
-            android:gravity="center"
             android:hint="Password"
             android:inputType="textPassword"
-            android:paddingLeft="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logInEmailEditText" />
 
         <EditText
             android:id="@+id/logInEmailEditText"
             android:layout_width="363dp"
             android:layout_height="56dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="104dp"
             android:background="@drawable/rounded_button"
-            android:drawableStart="@drawable/personicon"
-            android:drawableLeft="@drawable/personicon"
             android:drawablePadding="-30dp"
             android:ems="10"
-            android:gravity="center"
-            android:hint="name@example.com"
+            android:hint="Name@example.com"
             android:inputType="textEmailAddress"
-            android:paddingLeft="30dp"
-            app:layout_constraintBottom_toTopOf="@+id/logInPasswordeEditText"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logInWelcomeTextView" />
 
-        <!-- Sign up Button -->
         <Button
             android:id="@+id/logInForgotPasswordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="204dp"
             android:background="@android:color/transparent"
             android:text="Forgot password?"
             android:textAllCaps="false"
             android:textColor="#23999c"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logInPasswordeEditText" />
 
         <TextView
             android:id="@+id/logInNoAccountTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="76dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
             android:text="Don't have an account?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/logInSignUpButton"
-            app:layout_constraintHorizontal_bias="0.869"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logInButton"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/logInSignUpButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:layout_marginEnd="92dp"
-            android:layout_marginRight="92dp"
             android:background="@android:color/transparent"
             android:text="Sign up here"
             android:textAllCaps="false"
             android:textColor="#23999c"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logInButton" />
-
-        //I did not put the Forgot Password as a button
+            app:layout_constraintTop_toBottomOf="@+id/logInButton"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

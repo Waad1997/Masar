@@ -3,26 +3,26 @@
 
     <item
         android:id="@+id/bottomNavigationFqa"
-        android:icon="@drawable/faqicone"
+
         android:title="FAQ" />
 
     <item
         android:id="@+id/bottomNavigationProfile"
-        android:icon="@drawable/profileicone"
+
         android:title="Profile" />
 
     <item
         android:id="@+id/bottomNavigationHome"
-        android:icon="@drawable/homeicone"
+
         android:title="Home" />
 
     <item
         android:id="@+id/bottomNavigationNotification"
-        android:icon="@drawable/notificationicone"
+
         android:title="Notification" />
 
     <item
         android:id="@+id/bottomNavigationMore"
-        android:icon="@drawable/moreicone"
+
         android:title="Menu" />
 </menu>

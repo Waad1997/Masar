@@ -17,6 +17,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+<<<<<<< HEAD
+=======
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/masarMenuBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="335dp"
+            android:layout_marginRight="335dp"
+            android:layout_marginBottom="124dp"
+            android:clickable="true"
+            app:backgroundTint="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+             />
+
+>>>>>>> Waad
         <TextView
             android:id="@+id/masarMenu"
             android:layout_width="wrap_content"
@@ -54,7 +77,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:srcCompat="@drawable/home_menu_button" />
+=======
+      />
+>>>>>>> Waad
 
     <ImageButton
         android:id="@+id/masarMenuProfileButton"
@@ -71,7 +98,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:srcCompat="@drawable/profile_menu_button" />
+=======
+        />
+>>>>>>> Waad
 
     <ImageButton
         android:id="@+id/masarMenuSupportsButton"
@@ -88,7 +119,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:srcCompat="@drawable/support_menu_button" />
+=======
+        />
+>>>>>>> Waad
 
     <ImageButton
         android:id="@+id/masarMenuSettingsButton"
@@ -105,7 +140,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:srcCompat="@drawable/settings_menu_button" />
+=======
+        />
+>>>>>>> Waad
 
     <ImageButton
         android:id="@+id/masarMenuFqaButton"
@@ -122,7 +161,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:srcCompat="@drawable/faq_menu_button" />
+=======
+         />
+>>>>>>> Waad
 
     <ImageButton
         android:id="@+id/masarMenuNotificationButton"
@@ -139,7 +182,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:srcCompat="@drawable/nofi_menu_button" />
+=======
+    />
+>>>>>>> Waad
 
     <ImageButton
         android:id="@+id/masarMenuSignoutButton"
@@ -155,7 +202,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/signou_menu_button" />
+=======
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> Waad
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.masar.masarapp.LogIn">
+        tools:context="com.masar.masarapp.SignUp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -19,14 +19,31 @@
             tools:layout_editor_absoluteY="-235dp">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <!-- retrived data shown in this textview -->
 =======
 >>>>>>> origin/Maha
+=======
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/signUpBackFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                app:backgroundTint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="#00FAF7F7"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+>>>>>>> Waad
             <TextView
                 android:id="@+id/signUpLetsGetStartedTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="132dp"
+                android:layout_marginTop="52dp"
                 android:gravity="center_horizontal"
                 android:lineSpacingExtra="1.5sp"
                 android:text="Let's Get Started!"
@@ -36,68 +53,56 @@
                 android:textStyle="bold"
                 app:fontFamily="@font/quicksand_bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/signUpBackFloatingActionButton" />
 
-            <!-- used to enter the data and get saved in bundle-->
             <EditText
                 android:id="@+id/singUpEmailEditText"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginTop="96dp"
                 android:background="@drawable/rounded_button"
-                android:drawableStart="@drawable/personicon"
-                android:drawableLeft="@drawable/personicon"
                 android:drawablePadding="-30dp"
                 android:ems="10"
-                android:gravity="center"
-                android:hint="name@example.com"
+                android:hint="Name@example.com"
                 android:inputType="textEmailAddress"
-                android:paddingLeft="30dp"
-                app:layout_constraintBottom_toTopOf="@+id/singUpPasswordEditText"
+                android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signUpLetsGetStartedTextView" />
 
             <EditText
                 android:id="@+id/singUpPasswordEditText"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/rounded_button"
-                android:drawableStart="@drawable/openlockicon"
-                android:drawableLeft="@drawable/openlockicon"
                 android:drawablePadding="-30dp"
                 android:ems="10"
-                android:gravity="center"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:paddingLeft="30dp"
-                app:layout_constraintBottom_toTopOf="@+id/singUpConfirmPasswordEditText"
+                android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singUpEmailEditText" />
 
             <EditText
                 android:id="@+id/singUpConfirmPasswordEditText"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
-                android:layout_marginBottom="208dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/rounded_button"
-                android:drawableStart="@drawable/openlockicon"
-                android:drawableLeft="@drawable/openlockicon"
                 android:drawablePadding="-30dp"
                 android:ems="10"
-                android:gravity="center"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
-                android:paddingLeft="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singUpPasswordEditText" />
 
             <Button
-                android:id="@+id/singUpSignUpButton"
+                android:id="@+id/singup_Button"
                 android:layout_width="363dp"
                 android:layout_height="56dp"
                 android:layout_marginBottom="44dp"
@@ -110,7 +115,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:onClick="navigation"/>
+                app:layout_constraintTop_toBottomOf="@+id/singUpConfirmPasswordEditText"
+                app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

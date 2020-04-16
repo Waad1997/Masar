@@ -6,7 +6,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.masar.masarapp"
-        minSdkVersion 16
+        minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -41,7 +41,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'com.android.support:design:29.0.0'
 <<<<<<< HEAD
+<<<<<<< HEAD
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
+=======
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+>>>>>>> Waad
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
 =======
     implementation 'com.google.firebase:firebase-analytics:17.2.3'
@@ -49,4 +53,10 @@ dependencies {
     // The Firebase SDK for Google Analytics
     // add SDKs for any other desired Firebase products
     // https://firebase.google.com/docs/android/setup#available-libraries
+
+    implementation 'com.squareup.okhttp3:okhttp:4.5.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
 }
