@@ -16,6 +16,7 @@
         android:contentDescription="@string/masar_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo_with_name"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

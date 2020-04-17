@@ -37,7 +37,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
     private FirebaseDatabase firebaseDatabase;
     private FloatingActionButton resetpassword;
     String Name, Date;
-    String Gender = "Not selected yet";
+    String Gender;
     User userProfile;
     FirebaseUser userEmail;
 
@@ -77,20 +77,37 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
 
                 userProfile = new User();
                 userProfile = dataSnapshot.getValue(User.class);
-                Pname.setText(userProfile.getName());
-                Pdate.setText(userProfile.getBirthday());
+
+                if(dataSnapshot.exists()) {
+                    if(userProfile.getName() != null) {
+                        Pname.setText(userProfile.getName());
+                    }
+                    if(userProfile.getBirthday() != null) {
+                        Pdate.setText(userProfile.getBirthday());
+                    }
+
+                    if(dataSnapshot.child("gender").getValue() != null) {
+                        String GenderFirebase = dataSnapshot.child("gender").getValue().toString();
+                        if (GenderFirebase.equals("Male"))
+                        {
+                            getMale();
+
+                        }
+                        else
+                        {
+                            getFemale();
+                        }
+                    } else {
+                        txfemale.setTextColor(getResources().getColor(R.color.grey));
+                        txfemale.setBackground(null);
+                        txmale.setTextColor(getResources().getColor(R.color.grey));
+                        txmale.setBackground(null);
+                    }
+
+
+                }
+
                 Pemail.setText(userEmail.getEmail());
-                String GenderFirebase = dataSnapshot.child("gender").getValue().toString();
-                if (GenderFirebase.equals("Male"))
-                {
-                    getMale();
-
-                }
-               else
-                {
-                getFemale();
-                }
-
 
             }
 
@@ -149,6 +166,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         txmale.setBackgroundResource(R.drawable.rounded_button_orange);
         txfemale.setTextColor(getResources().getColor(R.color.grey));
         txfemale.setBackground(null);
+        Gender = "Male";
 
     }
 
@@ -160,7 +178,9 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
             txfemale.setBackgroundResource(R.drawable.rounded_button_orange);
             txmale.setTextColor(getResources().getColor(R.color.grey));
             txmale.setBackground(null);
-    }
+            Gender = "Female";
+
+        }
 
 
 
@@ -170,11 +190,11 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         {
             case R.id.tx_male:
            getMale();
-                Gender = "Male";
+//                Gender = "Male";
                 break;
             case R.id.tx_female:
                getFemale();
-                Gender = "Female";
+//                Gender = "Female";
                 break;
         }
     }

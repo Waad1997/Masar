@@ -2,6 +2,9 @@ package com.masar.masarapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Bundle;
 
 import android.content.Intent;
@@ -92,7 +95,7 @@ public class LogIn extends AppCompatActivity {
                                         Toast.makeText(LogIn.this, "Please verify your email address", Toast.LENGTH_LONG).show();
 
                                     }
-                            } else {
+                                } else {
                                     Log.e("ERROR AUTHENTICATION", "Password and confirmation do not match" + task.getException().getMessage());
 
                                     Toast.makeText(LogIn.this, task.getException().getMessage().toString(), Toast.LENGTH_LONG).show();
@@ -109,28 +112,16 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email = inputEmail.getText().toString().trim();
+                    ResetFragment resetFragment = new ResetFragment();
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.reset_fragment, resetFragment);
+                    fragmentTransaction.commit();
+//                    getSupportFragmentManager().beginTransaction().
+//                            replace(R.id.reset_fragment, new ResetFragment()).commit();
 
-                if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplication(), "Enter your registered email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                auth.sendPasswordResetEmail(email)
-
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(LogIn.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
-                                } else {
-                                    Toast.makeText(LogIn.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
-                                }
-
-                            }
-                        });
             }
+
         });
     }
-
 }
